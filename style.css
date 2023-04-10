@@ -1,12 +1,81 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-}
-
-html,
-body {
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 /* Add styles here! */
+html,
+body {
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 40%);
+  border-top: 8px solid hsl(0deg, 0%, 60%);
+  padding-top: 56px;
+  padding-bottom: 64px;
+}
+
+.max-width-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card,
+.intro-chunk {
+  padding: 0 24px 16px;
+}
+
+.intro-chunk {
+  padding-top: 96px;
+  margin-bottom: 48px;
+}
+
+.intro-chunk h1 {
+  font-size: 1.6rem;
+  margin-bottom: 32px;
+}
+
+.intro-chunk p {
+  max-width: 320px;
+}
+
+.intro-chunk strong {
+  font-weight: 700;
+  color: hsl(160deg, 100%, 30%);
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 8px solid hsl(0deg, 0%, 60%);
+  padding-top: 1px;
+}
+
+.card .indented-heading {
+  max-width: fit-content;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  padding: 8px 32px 8px 32px;
+
+  /*
+   * Card has top padding of 1px to break margin collapse; 7px is just meant to
+   * add to that to, so that the total is still 8px
+   */
+  margin: 7px 0 16px -32px;
+}
